@@ -25,8 +25,8 @@ document.querySelector("#pariedispari").addEventListener("click", function(){
 
     let my_number = parseInt(prompt("inserisci un numero"));
 
-    while(!(Number.isInteger(my_number))  ){
-        my_number = parseInt("inserisci un numero valido")
+    while((Number.isNaN(my_number))  ){
+        my_number = parseInt(prompt("inserisci un numero valido"))
 
     }
 

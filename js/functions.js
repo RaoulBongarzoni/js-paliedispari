@@ -17,16 +17,27 @@ function palindromo(stringa){
 
 }
 
-function pari_o_dispari(numero){
+function pari_o_dispari(valore, numero){
 
     const num2 = Math.floor(Math.random() * (5 - 0) ) ;
 
 
-    const somma = num2 + numero;
+    alert("la macchina ha scelto" + " " + num2)
+
+
+    const somma = numero + num2;
+    let machine_choice = "";
     if (somma % 2 == 0){
-        return num2
+        machine_choice = "pari"
     }else{
-        return num2
+        machine_choice = "dispari"
+    }
+
+    if(valore == machine_choice){
+        return ("hai vinto congratulazioni")
+        
+    }else{
+        return ("hai perso :(")
     }
 
 }

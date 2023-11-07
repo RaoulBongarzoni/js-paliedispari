@@ -10,11 +10,7 @@ document.querySelector("#palindromo").addEventListener("click", function(){
     }
 
 
-}
-
-
-
-)
+})
 
 
 
@@ -34,25 +30,6 @@ document.querySelector("#pariedispari").addEventListener("click", function(){
 
     }
 
-    alert("la macchina ha scelto" + " " + pari_o_dispari(my_number))
-
-
-    const somma = my_number + pari_o_dispari(my_number);
-    let machine_choice = "";
-    if (somma % 2 == 0){
-        machine_choice = "pari"
-    }else{
-        machine_choice = "dispari"
-    }
-
-    if(my_choice == machine_choice){
-        alert("hai vinto congratulazioni")
-        
-    }else{
-        alert("hai perso :(")
-    }
-
-
-
+    alert(pari_o_dispari(my_choice, my_number));
 
 })
